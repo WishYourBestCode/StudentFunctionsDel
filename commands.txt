@@ -1,0 +1,28 @@
+ 1 code .
+   2 mkdir  StudentFunctions
+   3 cd .\StudentFunctions\
+   4 code .
+   5 func start
+   6 func start
+   7 func start
+  18 mkdir Test
+  19 cd Test
+  20 cd ..
+  21 cd .\StudentFunctions\
+  22 dotnet add package Microsoft.Azure.Functions.Extensions
+  23 dotnet add package Microsoft.EntityFrameworkCore
+  24 dotnet add package Microsoft.EntityFrameworkCore.Design
+  25 dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+  26 dotnet add package Microsoft.EntityFrameworkCore.Tools
+  27 docker run --cap-add SYS_PTRACE -e ACCEPT_EULA=1 -e MSSQL_SA_PASSWORD=SqlPassword! -p 1444:1433 --name sqldb -d mcr.microsoft.com/mssql/server:2022...
+  28 docker run --cap-add SYS_PTRACE -e ACCEPT_EULA=1 -e MSSQL_SA_PASSWORD=SqlPassword! -p 1444:1433 --name sqldb -d mcr.microsoft.com/mssql/server:2022...
+  29 docker run --cap-add SYS_PTRACE -e ACCEPT_EULA=1 -e MSSQL_SA_PASSWORD=SqlPassword! -p 1444:1433 --name sqldb -d mcr.microsoft.com/mssql/server:2022...
+  30 dotnet ef dbcontext scaffold "Data Source=localhost,1444;Database=School;Persist Security Info=True;User ID=sa;Password=SqlPassword!;TrustServerCer...
+  31 code .
+
+   dotnet ef dbcontext scaffold "Data Source=localhost,1444;Database=School;Persist Security Info=True;User ID=sa;Password=SqlPassword!;TrustServerCertificate=True;"
+   dotnet ef dbcontext scaffold "Server=tcp:static-web-apps-db-server.database.windows.net,1433;Initial Catalog=static-web-apps-lesson;Persist Security Info=False;User ID=static-web-apps;Password=DB0admin-user;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+    dotnet ef dbcontext scaffold "Data Source=localhost,1444;Database=School;Persist Security Info=True;User ID=sa;Password=SqlPassword!;TrustServerCertificate=True;"
+
+    // "DATABASE_CONNECTION_STRING": "Data Source=localhost,1444;Database=School;Persist Security Info=True;User ID=sa;Password=SqlPassword!;TrustServerCertificate=True;"
+      //"DATABASE_CONNECTION_STRING": "Server=tcp:static-web-apps-db-server.database.windows.net,1433;Initial Catalog=static-web-apps-lesson;Persist Security Info=False;User ID=static-web-apps;Password=DB0admin-user;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace StudentFunctions.Models.School;
+namespace StudentFunctions.Models;
 
 public partial class Student
 {

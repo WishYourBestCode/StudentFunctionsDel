@@ -2,7 +2,7 @@ using Microsoft.Azure.Functions.Worker.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using StudentFunctions.Models.School;
+using StudentFunctions.Models;
 
 var builder = FunctionsApplication.CreateBuilder(args);
 
